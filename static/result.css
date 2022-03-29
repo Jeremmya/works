@@ -1,0 +1,345 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.image
+{
+	margin-left: -8px;
+	width: 100%;
+}
+.text
+{
+	position: absolute;
+	width: 84px;
+	height: 32px;
+	left: 620px;
+	top: 127px;
+
+	font-size: 24px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+img
+{
+	height: 180px;
+	width: 100%;
+}
+
+
+.id
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 495px;
+	top: 217px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.name
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 495px;
+	top: 281px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.discount
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 495px;
+	top: 409px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.company
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 495px;
+	top: 345px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+
+.sum
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 809px;
+	top: 282px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.seller
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 811px;
+	top: 217px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.discsum
+{
+	position: absolute;
+	width: 192px;
+	height: 32px;
+	left: 810px;
+	top: 345px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.totalsum
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 810px;
+	top: 405px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+
+
+
+
+.idinput
+{
+	position: absolute;
+	width: 462px;
+	height: 32px;
+	left: 494px;
+	top: 241px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.nameinput
+{
+	position: absolute;
+	width: 262px;
+	height: 32px;
+	left: 494px;
+	top: 305px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.discountinput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 494px;
+	top: 433px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.companyinput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 495px;
+	top: 369px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+
+
+
+.suminput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 808px;
+	top: 306px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.sellerinput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 810px;
+	top: 241px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.discsuminput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 809px;
+	top: 369px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+.totalsuminput
+{
+	position: absolute;
+	width: 162px;
+	height: 32px;
+	left: 809px;
+	top: 429px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #5C6064;
+}
+
+
+.logbtn
+{
+	position: absolute;
+	width: 192px;
+	height: 43px;
+	left: 780px;
+	top: 602px;
+
+	background: #00D67A;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 192px;
+	height: 43px;
+	left: 490px;
+	top: 602px;
+
+	background: #8999AA;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+
+
+

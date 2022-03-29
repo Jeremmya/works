@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/static/cardstatus.css">
+</head>
+<body onload="myFunction()">
+	<form action="/cardstatus" method="POST" method="GET">
+		<div class="image">
+      		<img src="/static/loyal.jpg">
+    	</div>
+    	<label class="text">Назначение</label>
+
+    	<label class="head1">Общепит</label>
+    	<label class="head2">Медицина</label>
+    	<label class="head3">Образование</label>
+    	<label class="head4">Прочие</label>
+
+
+    	<label class="goldl">GOLD</label>
+		<div class="obs">
+
+			<label class="gold" id={{getstatus.food}}><span id="g"></span></label>
+			<label class="silver" id={{getstatus2.food}}><span id="s"></span></label>
+			<label class="premium" id={{getstatus3.food}}><span id="p"></span></label>
+			<label class="infinity" id={{getstatus4.food}}><span id="i"></span></label>
+		</div>
+
+		<label class="silverl">SILVER</label>
+		<div class="medit">
+			<label class="gold" id={{getstatus.med}}><span id="go"></span></label>
+			<label class="silver" id={{getstatus2.med}}><span id="si"></span></label>
+			<label class="premium" id={{getstatus3.med}}><span id="pr"></span></label>
+			<label class="infinity" id={{getstatus4.med}}><span id="in"></span></label>
+		</div>
+
+		<label class="premiuml">PREMIUM</label>
+		<div class="obrazovanie">
+			<label class="gold" id={{getstatus.edc}}><span id="gol"></span></label>
+			<label class="silver" id={{getstatus2.edc}}><span id="sil"></span></label>
+			<label class="premium" id={{getstatus3.edc}}><span id="pre"></span></label>
+			<label class="infinity" id={{getstatus4.edc}}><span id="inf"></span></label>
+		</div>
+
+
+		<label class="infinityl">INFINITY</label>
+		<div class="ostalnoe">
+			<label class="gold" id={{getstatus.drugoe}}><span id="gold"></span></label>
+			<label class="silver" id={{getstatus2.drugoe}}><span id="silv"></span></label>
+			<label class="premium" id={{getstatus3.drugoe}}><span id="prem"></span></label>
+			<label class="infinity" id={{getstatus4.drugoe}}><span id="infi"></span></label>
+		</div>
+
+		<div>
+            <input type="button" class="logbtnb" id = "logbtnb" value="Назад" onclick="history.back()">
+    	</div>
+
+	</form>
+
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementsByClassName("gold")[0].id;
+  if(x==1)
+  {
+      document.getElementById("g").innerHTML = "Вкл";
+  }
+  else if(x==2)
+  {
+  document.getElementById("g").innerHTML = "Выкл";
+  }
+  var q = document.getElementsByClassName("gold")[1].id;
+  if(q==1)
+  {
+      document.getElementById("go").innerHTML = "Вкл";
+  }
+  else if(q==2)
+  {
+  document.getElementById("go").innerHTML = "Выкл";
+  }
+  var w = document.getElementsByClassName("gold")[2].id;
+  if(w==1)
+  {
+      document.getElementById("gol").innerHTML = "Вкл";
+  }
+  else if(w==2)
+  {
+  document.getElementById("gol").innerHTML = "Выкл";
+  }
+  var e = document.getElementsByClassName("gold")[3].id;
+  if(e==1)
+  {
+      document.getElementById("gold").innerHTML = "Вкл";
+  }
+  else if(e==2)
+  {
+    document.getElementById("gold").innerHTML = "Выкл";
+  }
+
+
+
+  var x = document.getElementsByClassName("silver")[0].id;
+  if(x==1)
+  {
+      document.getElementById("s").innerHTML = "Вкл";
+  }
+  else if(x==2)
+  {
+  document.getElementById("s").innerHTML = "Выкл";
+  }
+
+  var q = document.getElementsByClassName("silver")[1].id;
+  if(q==1)
+  {
+      document.getElementById("si").innerHTML = "Вкл";
+  }
+  else if(q==2)
+  {
+  document.getElementById("si").innerHTML = "Выкл";
+  }
+
+  var w = document.getElementsByClassName("silver")[2].id;
+  if(w==1)
+  {
+      document.getElementById("sil").innerHTML = "Вкл";
+  }
+  else if(w==2)
+  {
+  document.getElementById("sil").innerHTML = "Выкл";
+  }
+
+  var e = document.getElementsByClassName("silver")[3].id;
+  if(e==1)
+  {
+      document.getElementById("silv").innerHTML = "Вкл";
+  }
+  else if(e==2)
+  {
+  document.getElementById("silv").innerHTML = "Выкл";
+  }
+
+
+
+  var x = document.getElementsByClassName("premium")[0].id;
+  if(x==1)
+  {
+      document.getElementById("p").innerHTML = "Вкл";
+  }
+  else if(x==2)
+  {
+  document.getElementById("p").innerHTML = "Выкл";
+  }
+
+  var q = document.getElementsByClassName("premium")[1].id;
+  if(q==1)
+  {
+      document.getElementById("pr").innerHTML = "Вкл";
+  }
+  else if(q==2)
+  {
+  document.getElementById("pr").innerHTML = "Выкл";
+  }
+
+  var w = document.getElementsByClassName("premium")[2].id;
+  if(w==1)
+  {
+      document.getElementById("pre").innerHTML = "Вкл";
+  }
+  else if(w==2)
+  {
+  document.getElementById("pre").innerHTML = "Выкл";
+  }
+
+  var e = document.getElementsByClassName("premium")[3].id;
+  if(e==1)
+  {
+      document.getElementById("prem").innerHTML = "Вкл";
+  }
+  else if(e==2)
+  {
+  document.getElementById("prem").innerHTML = "Выкл";
+  }
+
+
+
+  var x = document.getElementsByClassName("infinity")[0].id;
+  if(x==1)
+  {
+      document.getElementById("i").innerHTML = "Вкл";
+  }
+  else if(x==2)
+  {
+  document.getElementById("i").innerHTML = "Выкл";
+  }
+
+  var q = document.getElementsByClassName("infinity")[1].id;
+  if(q==1)
+  {
+      document.getElementById("in").innerHTML = "Вкл";
+  }
+  else if(q==2)
+  {
+  document.getElementById("in").innerHTML = "Выкл";
+  }
+
+  var w = document.getElementsByClassName("infinity")[2].id;
+  if(w==1)
+  {
+      document.getElementById("inf").innerHTML = "Вкл";
+  }
+  else if(w==2)
+  {
+  document.getElementById("inf").innerHTML = "Выкл";
+  }
+
+  var e = document.getElementsByClassName("infinity")[3].id;
+  if(e==1)
+  {
+      document.getElementById("infi").innerHTML = "Вкл";
+  }
+  else if(e==2)
+  {
+  document.getElementById("infi").innerHTML = "Выкл";
+  }
+
+}
+
+</script>
+</body>
+</html>

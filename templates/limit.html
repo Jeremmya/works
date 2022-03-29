@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Company</title>
+        <link rel="stylesheet" type="text/css" href="/static/limit.css">
+    </head>
+  <body>
+      <h1>{{limitsum}}</h1>
+    <h1>{{tip}}</h1>
+      <form action="/limit" method="POST" name="lim" class="login-form" >
+      	<div>
+      		<img src="/static/loyal.jpg">
+      	</div>
+
+    <div class="txtb">
+        <label class="vid">Вид карты:</label>
+
+    	<select class="choose" onchange="checker(this)" name="compn" id="compn">
+        <option value="0">Выбери:</option>
+        <option value="1">SILVER</option>
+        <option value="2">GOLD</option>
+        <option value="3">PREMIUM</option>
+        <option value="4">INFINITY</option>
+    </select>
+
+    </div>
+
+    <div id="ifYes" style="display: none;">
+      <p class="cardlimit">Введите лимит карты:</p>
+      <label class="card">Карта SILVER</label>
+      <input class="cardinput" type="text" onkeyup="return isNumber(event)" name="limits">
+      <button class="logbtn" type="submit" value="Добавить" name="submit">Внести </button><br>
+        <button type="submit" name="submit" class="logbtnb" value="Назад" > Назад </button><br>
+        <label class="currentlimit">Текущий лимит:</label> <label class="currentlimit2"><span id="val"></span></label>
+        <label id="clim" style="display: none;">{{silver.limits}}</label>
+    </div>
+
+    <div id="ifYes2" style="display: none;">
+      <p class="cardlimit">Введите лимит карты:</p>
+      <label class="card">Карта GOLD</label>
+      <input class="cardinput"  type="text" onkeyup="return isNumber(event)"  name="limits2">
+      <button class="logbtn" type="submit" value="Добавить" name="submit">Внести </button><br>
+        <button type="submit" name="submit" class="logbtnb" value="Назад" > Назад </button><br>
+        <label class="currentlimit">Текущий лимит: </label> <label class="currentlimit2"> <span id="val2"></span> </label>
+        <label id="clim2" style="display: none;">{{gold.limits}}</label>
+    </div>
+    <div id="ifYes3" style="display: none;">
+      <p class="cardlimit">Введите лимит карты:</p>
+      <label class="card">Карта PREMIUM</label>
+      <input class="cardinput"  type="text" onkeyup="return isNumber(event)"  name="limits3">
+      <button class="logbtn" type="submit" value="Добавить" name="submit">Внести</button><br>
+        <button type="submit" name="submit" class="logbtnb" value="Назад" > Назад </button><br>
+        <label class="currentlimit">Текущий лимит:</label> <label class="currentlimit2"> <span id="val3"></span> </label>
+        <label id="clim3" style="display: none;">{{premium.limits}}</label>
+    </div>
+    <div id="ifYes4" style="display: none;">
+      <p class="cardlimit">Введите лимит карты:</p>
+      <label class="card">Карта INFINITY</label>
+      <input class="cardinput"  type="text" onkeyup="return isNumber(event)"  name="limits4">
+      <button class="logbtn" type="submit"  value="Добавить" name="submit">Внести </button><br>
+        <button type="submit" name="submit" class="logbtnb" value="Назад" > Назад </button><br>
+        <label class="currentlimit" >Текущий лимит:</label> <label class="currentlimit2"> <span id="val4"></span> </label>
+        <label id="clim4" style="display: none;">{{infinity.limits}} </label>
+    </div>
+    <button type="submit" name="submit" class="logbtnb" value="Назад" > Назад </button><br>
+
+    <script>
+
+    var num = document.getElementById("clim").innerHTML;
+    document.getElementById("val").innerHTML = num.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+    var num2 = document.getElementById("clim2").innerHTML;
+    document.getElementById("val2").innerHTML = num2.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+    var num3 = document.getElementById("clim3").innerHTML;
+    document.getElementById("val3").innerHTML = num3.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+    var num4 = document.getElementById("clim4").innerHTML;
+    document.getElementById("val4").innerHTML = num4.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+      function isNumber(e) {
+      e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').
+                      replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+      }
+
+
+      function checker(that) {
+        if (that.value == "1")
+        {
+          document.getElementById('ifYes').style.display = "block";
+          document.getElementById('ifYes2').style.display = "none";
+          document.getElementById('ifYes3').style.display = "none";
+          document.getElementById('ifYes4').style.display = "none";
+        }
+        else if (that.value == "2")
+        {
+          document.getElementById('ifYes2').style.display = "block";
+          document.getElementById('ifYes').style.display = "none";
+          document.getElementById('ifYes3').style.display = "none";
+          document.getElementById('ifYes4').style.display = "none";
+        }
+        else if (that.value == "3")
+        {
+          document.getElementById('ifYes3').style.display = "block";
+          document.getElementById('ifYes2').style.display = "none";
+          document.getElementById('ifYes').style.display = "none";
+          document.getElementById('ifYes4').style.display = "none";
+        }
+        else if (that.value == "4")
+        {
+          document.getElementById('ifYes4').style.display = "block";
+          document.getElementById('ifYes2').style.display = "none";
+          document.getElementById('ifYes3').style.display = "none";
+          document.getElementById('ifYes').style.display = "none";
+        }
+        else if (that.value == "0")
+        {
+          document.getElementById('ifYes4').style.display = "none";
+          document.getElementById('ifYes2').style.display = "none";
+          document.getElementById('ifYes3').style.display = "none";
+          document.getElementById('ifYes').style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

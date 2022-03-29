@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Company</title>
+        <link rel="stylesheet" type="text/css" href="/static/company.css">
+    </head>
+  <body>
+      <form action="/companiya" method="POST" class="login-form" >
+      	<div>
+      		<img src="/static/loyal.jpg">
+      	</div>
+
+    <div class="txtb">
+        <label class="organization">Название организации:</label><br>
+        <input type="text" class="orgainput" name="newcompany" placeholder=" Например: Media Park">
+
+        <label class="cashier">Логин для продавца:</label><br>
+        <input type="text" class="cashierinput" name="newcompany" placeholder=" Например: example@akfa.uz">
+
+        <label class="buxgal">Логин для бухгалтерии:</label><br>
+        <input type="text" class="buxgalinput" name="newcompany" placeholder=" Например: example@bux.uz">
+
+        <label class="pass">Пароль:</label><br>
+        <input type="text" class="passinput" name="passcashier" >
+
+        <label class="passcheck">Пароль:</label><br>
+        <input type="text" class="passcheckinput" name="passbux" >
+
+        <label class="vid">Вид продаж и услуг:</label>
+
+    	<select class="choose" name="compn" id="compn">
+        <option value="0">Выбери:</option>
+        <option value="1">Общепит</option>
+        <option value="2">Медицина</option>
+        <option value="3">Образование</option>
+        <option value="4">Бытовые и прочие</option>
+    </select>
+
+    </div>
+      <div>
+      	<button class="logbtn" type="submit" value="Добавить" name="submit">Добавить </button><br>
+      	<button type="button" class="logbtnb" value="Назад" onclick="history.back()"> Назад </button><br>
+      </div>
+  </body>
+</html>

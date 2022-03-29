@@ -1,0 +1,250 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.image
+{
+	margin-left: -8px;
+	width: 100%;
+}
+.text
+{
+	position: absolute;
+	width: 384px;
+	height: 32px;
+	left: 520px;
+	top: 127px;
+
+	font-size: 24px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+img
+{
+	height: 180px;
+	width: 100%;
+}
+.head1 {
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 400px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.head2 {
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 533px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.head3 {
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 673px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.head4 {
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 843px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.goldl 
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 250px;
+	top: 297px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.silverl
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 250px;
+	top: 347px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.premiuml
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 250px;
+	top: 397px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.infinityl
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 250px;
+	top: 447px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.gold
+{
+	position: absolute;
+	width: 75px;
+	height: 25px;
+	left: 410px;
+	top: 294px;
+}
+.silver
+{
+	position: absolute;
+	width: 75px;
+	height: 25px;
+	left: 410px;
+	top: 344px;
+}
+.premium
+{
+	position: absolute;
+	width: 75px;
+	height: 25px;
+	left: 410px;
+	top: 394px;
+}
+.infinity
+{
+	position: absolute;
+	width: 75px;
+	height: 25px;
+	left: 410px;
+	top: 444px;
+}
+.medit
+{
+	position: absolute;
+	left: 133px;
+	top: 0px;
+}
+.obrazovanie
+{
+	position: absolute;
+	left: 293px;
+	top: 0px;
+}
+.ostalnoe
+{
+	position: absolute;
+	left: 433px;
+	top: 0px;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 192px;
+	height: 50px;
+	left: 470px;
+	top: 583px;
+
+	background: #8999AA;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+.logbtn
+{
+	position: absolute;
+	width: 192px;
+	height: 50px;
+	left: 779px;
+	top: 583px;
+
+	background: #00D67A;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+
+

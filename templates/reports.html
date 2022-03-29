@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+    <link rel="stylesheet" type="text/css" href="/static/report.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+</head>
+<body>
+    <form action="/reports" method="POST" method="GET"></form>
+
+    <input type="text" class="search" id="myInput" onkeyup="myFunction()" placeholder="Название организации.." title="Type in a name">
+
+    <div class="image">
+      <img src="/static/loyal1.jpg">
+    </div>
+
+<table id="customers">
+  <tr class="header">
+    <th>Имя покупателя</th>
+    <th>Компания покупателя</th>
+    <th>Дата продажи</th>
+    <th>ID</th>
+    <th>Продавец</th>
+    <th>Сумма</th>
+    <th>Скидка</th>
+  </tr>
+
+  {% for user in reportdata %}
+  <tr>
+    <td>{{user.name}}</td>
+    <td>{{user.buyer}}</td>
+    <td>{{user.ydate}}.{{user.mdate}}.{{user.ddate}} - {{user.hdate}}:{{user.mindate}}</td>
+    <td>{{user.buyerid}}</td>
+    <td>{{user.seller}}</td>
+    <td>{{user.sum}}</td>
+    <td>{{user.discount}}</td>
+  </tr>
+{% endfor %}
+
+<tr class="header">
+    <th>Итого:</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th><span id="val"></span><span id="vali"></span></th>
+    <th><span id="valy"></span><span id="disvali"></span></th>
+  </tr>
+
+</table>
+
+<script>
+
+function exportTableToExcel(tableID, filename = '')
+{
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    filename = filename?filename+'.xls':'excel_data.xls';
+    downloadLink = document.createElement("a");
+    document.body.appendChild(downloadLink);
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+        downloadLink.download = filename;
+        downloadLink.click();
+    }
+}
+
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue, sumVale = 0, discVale = 0;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("customers");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+        $(document).ready(function(){
+        $("#val").hide();
+        });
+        $(document).ready(function(){
+        $("#valy").hide();
+        });
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+
+        sumVale = sumVale + parseInt(tr[i].cells[5].innerHTML.replace(/ /g,''));
+
+        discVale = discVale + parseInt(tr[i].cells[6].innerHTML.replace(/ /g,''));
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+        var a = parseInt(sumVale);
+        var n = a.toString();
+        document.getElementById("vali").innerHTML = n.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+        console.log(sumVale)
+
+        var b = parseInt(discVale);
+        var d = b.toString();
+        document.getElementById("disvali").innerHTML = d.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');;
+        console.log(discVale)
+  }
+}
+var table = document.getElementById("customers"), sumValy = 0;
+
+            for(var i = 1; i < table.rows.length-1; i++)
+            {
+                sumValy = sumValy + parseInt(table.rows[i].cells[6].innerHTML.replace(/ /g,''));
+            }
+
+            var a = parseInt(sumValy)
+            var n = a.toString();
+
+            document.getElementById("valy").innerHTML = n.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+            console.log(sumValy);
+
+var table = document.getElementById("customers"), sumVal = 0;
+
+            for(var i = 1; i < table.rows.length-1; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[5].innerHTML.replace(/ /g,''));
+            }
+
+            var a = parseInt(sumVal)
+            var n = a.toString();
+
+            document.getElementById("val").innerHTML = n.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+            console.log(sumVal);
+
+</script>
+<div>
+
+
+        <input type="button" class="logbtnb" id = "logbtnb" value="Назад" onclick="history.back()">
+        <input type="button" class="logbtn" onclick="exportTableToExcel('customers')" value="Скачать">
+
+</div>
+
+</body>
+</html>

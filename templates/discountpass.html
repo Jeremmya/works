@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Company</title>
+        <link rel="stylesheet" type="text/css" href="/static/discountpass.css">
+    </head>
+  <body>
+      <form action="/discountpass" method="POST" class="login-form" >
+      	<div>
+      		<img src="/static/loyal.jpg">
+      	</div>
+
+    <div class="txtb">
+        <label class="vid">Вид продаж и услуг:</label>
+
+    	<select class="choose" name="compn" id="compn">
+        <option value="0">Выбери:</option>
+        <option value="1">Общепит</option>
+        <option value="2">Медицина</option>
+        <option value="3">Образование</option>
+        <option value="4">Бытовые и прочие</option>
+    </select>
+
+    </div>
+      <div>
+      	<button class="logbtn" type="submit" value="Добавить" name="submit">Перейти </button><br>
+      	<button type="submit" class="logbtnb" value="Назад" name="submit">Назад </button><br>
+      </div>
+  </body>
+</html>

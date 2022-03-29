@@ -1,0 +1,161 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.image
+{
+	margin-left: -8px;
+	width: 100%;
+}
+.text
+{
+	position: absolute;
+	width: 384px;
+	height: 32px;
+	left: 520px;
+	top: 127px;
+
+	font-size: 24px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+img
+{
+	height: 180px;
+	width: 100%;
+}
+
+.id
+{
+	position: absolute;
+	width: 153px;
+	height: 32px;
+	left: 473px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.idinput
+{
+	position: absolute;
+	width: 222px;
+	height: 58px;
+	left: 473px;
+	top: 284px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 18px;
+}
+.sum
+{
+	position: absolute;
+	width: 178px;
+	height: 32px;
+	left: 473px;
+	top: 355px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+#compn
+{
+	position: absolute;
+	width: 499px;
+	height: 58px;
+	left: 473px;
+	top: 382px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 18px;
+}
+.seller
+{
+	position: absolute;
+	width: 171px;
+	height: 32px;
+	left: 743px;
+	top: 247px;
+
+	font-size: 22px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 29px;
+
+	color: #8999AA;
+}
+.sellerinput
+{
+	position: absolute;
+	width: 222px;
+	height: 58px;
+	left: 743px;
+	top: 284px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 18px;
+}
+.logbtn
+{
+	position: absolute;
+	width: 192px;
+	height: 50px;
+	left: 779px;
+	top: 453px;
+
+	background: #00D67A;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 192px;
+	height: 50px;
+	left: 470px;
+	top: 453px;
+
+	background: #8999AA;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #FFFFFF;
+}

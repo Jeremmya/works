@@ -1,0 +1,161 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img
+{
+	height: 180px;
+	width: 100%;
+}
+.vid
+{
+	position: absolute;
+	width: 206px;
+	height: 29px;
+	left: 463px;
+	top: 255px;
+
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.choose
+{
+	position: absolute;
+	width: 502px;
+	height: 48px;
+	left: 463px;
+	top: 292px;
+
+	border: 2px solid #8999AA;
+	box-sizing border-box;
+	border-radius: 6px;
+
+	font-size: 14px;
+}
+.card
+{
+	position: absolute;
+	width: 206px;
+	height: 29px;
+	left: 463px;
+	top: 475px;
+
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.cardlimit
+{
+	position: absolute;
+	width: 206px;
+	height: 29px;
+	left: 600px;
+	top: 405px;
+
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.cardinput
+{
+	position: absolute;
+	width: 302px;
+	height: 48px;
+	left: 653px;
+	top: 460px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+
+	font-size: 14px;
+}
+.logbtn
+{
+	position: absolute;
+	width: 122px;
+	height: 43px;
+	left: 844px;
+	top: 525px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFFFFF;
+
+	background: #00D67A;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 102px;
+	height: 43px;
+	left: 460px;
+	top: 524px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #8999AA;
+
+	background: white;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}
+.currentlimit
+{
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 950px;
+    top: 470px;
+
+    font-size: 24px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #8999AA
+}
+.currentlimit2
+{
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    left: 1150px;
+    top: 470px;
+
+    font-size: 24px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #8999AA
+}

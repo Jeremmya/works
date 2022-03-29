@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CITY NET</title>
+  <link rel="stylesheet" href="/static/search.css">
+
+</head>
+<body>
+
+  <form action="/search" method="post" class="login-form" onkeydown="return event.key != 'Enter';">
+    <div class="image">
+      <img src="/static/loyal.jpg">
+    </div>
+    <label class="text">Поиск</label>
+    <div class="txtb">
+      <input type="text" class="idinput" onkeyup="myFunction()" autocomplete="off"  id="idinput" name="userid">
+      <p class="messages">{{ErrorMessage}}  {{lime}}</p>
+      <label class="sum">Введите сумму</label>
+      <input type="text" onkeyup="return isNumber(event)" class="suminput" id = "suminput" autocomplete="off" placeholder=" 200 000" name="sum">
+
+      <div class="loader" style="display: none;" id = "loader"></div>
+
+      <p class="message"><span id="message"></span></p>
+      <p>{{userid}}</p>
+      <p>{{usersum}}</p>
+    </div>
+    <button type="submit" class="logbtn"  id = "logbtn" value="Посчитать" name="submit"></button>
+    <button type="submit" class="logbtnb" value="Назад" name="submit"> Назад </button>
+  </form>
+<script>
+
+function isNumber(e) {
+      e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').
+                      replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+
+      }
+
+var input = document.getElementById("suminput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("idinput").focus();
+   document.getElementById('loader').style.display = "block";
+   document.getElementById('message').innerHTML = "Приложите карту лояльности!";
+  }
+});
+
+function myFunction() {
+      document.getElementById('logbtn').click();
+  }
+
+
+</script>
+</body>
+</html>

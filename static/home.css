@@ -1,0 +1,117 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.box
+{
+	position: relative;
+	text-align: center;
+}
+.text
+{
+	position: absolute;
+	width: 84px;
+	height: 32px;
+	left: 620px;
+	top: 127px;
+
+	font-size: 24px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+img
+{
+	height: 180px;
+	width: 100%;
+}
+.loglabel
+{
+	position: absolute;
+	width: 301px;
+	height: 32px;
+	left: 463px;
+	top: 257px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.login
+{
+	position: absolute;
+	width: 502px;
+	height: 48px;
+	left: 463px;
+	top: 294px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+
+	font-size: 14px;
+}
+.paslabel
+{
+	position: absolute;
+	width: 206px;
+	height: 29px;
+	left: 463px;
+	top: 355px;
+
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.password
+{
+	position: absolute;
+	width: 502px;
+	height: 48px;
+	left: 463px;
+	top: 392px;
+
+	border: 2px solid #8999AA;
+	box-sizing: border-box;
+	border-radius: 6px;
+
+	font-size: 14px;
+}
+.logbtn
+{
+	position: absolute;
+	width: 172px;
+	height: 43px;
+	left: 804px;
+	top: 463px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFFFFF;
+
+	background: #2F8FFE;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}
+
+
+
+
+

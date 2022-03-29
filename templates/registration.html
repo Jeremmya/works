@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+          <link rel="stylesheet" href="/static/staff.css">
+    </head>
+  <body>
+      <form action="/registration" method="POST" method="GET">
+        <div class="image">
+          <img src="/static/loyal.jpg">
+        </div>
+        <label class="text">Добавить персонал</label>
+
+    <div class="flex-container">
+        <p class="messages">{{ErrorMessage}}</p>
+        <label class="name">Ф.И.О:</label>
+        <input class="nameinput" autocomplete="off" type="text" name="name">
+        <label class="seller">Сколько лет работает:</label>
+        <input class="sellerinput" autocomplete="off" type="text" name="year">
+        <label class="job">Место работы:</label>
+        <select class="jobinput" name="compn" id="compn">
+          <option value="0">Выбери из списка:</option>
+          {% for user in companies %}
+          <option value={{user.id}}>{{user.company}}</option>
+          {% endfor %}
+        </select>
+        <label class="id">ID:</label><br>
+        <input class="idinput" autocomplete="off" type="text" name="userid">
+      </div>
+    <div>
+            <input type="submit" class="logbtn" value="Добавить" name="submit">
+            <input type="button" class="logbtnb" value="Назад" onclick="history.back()">
+    </div>
+    </form>
+  </body>
+</html>

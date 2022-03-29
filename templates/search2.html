@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Search2</title>
+	<link rel="stylesheet" type="text/css" href="/static/result.css">
+</head>
+<body>
+	<form action="/search2" class="login-form" method="post">
+		<div class="image">
+      		<img src="/static/loyal.jpg">
+    	</div>
+    	<label class="text">Счёт</label>
+		<div class="txtbe">
+			<div class="txtb">
+				<label class="id">Имя владельца:</label>
+        		<label class="idinput">{{Uname}}</label>
+        		<label class="sum">Сумма:</label>
+        		<label class="suminput">{{usersum}} сум</label>
+        		<label class="seller">Продавец:</label>
+        		<label class="sellerinput">{{sellcomp}}</label>
+        		<label class="discsum">Скидочная Сумма:</label>
+        		<label class="discsuminput">{{discsum}} сум</label>
+        		<label class="totalsum">Сумма к оплате:</label>
+        		<label class="totalsuminput">{{totalpay}} сум</label>
+        		<label class="name">Скидка:</label>
+          		<label class="nameinput">{{discount}}%</label>
+          		<label class="discount">Скидка:</label>
+        		<label class="discountinput">{{discount}}</label>
+        		<label class="company">Карта:</label>
+        		<label class="companyinput">{{card}}</label>
+        	</div>
+		</div>
+		<div>
+			<button type="submit" class="logbtn" value="Печать/Сохранить" name="submit"> Печать/Сохранить</button>
+        	<button type="submit" class="logbtnb" value="Назад" name="submit"> Назад </button>
+		</div>
+</body>
+</html>
+
+
+

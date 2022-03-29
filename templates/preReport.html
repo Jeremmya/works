@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pre Report</title>
+  <link rel="stylesheet" type="text/css" href="/static/preReport.css">
+</head>
+<body>
+  <form action="/preReport" method="POST" class="login-form">
+    <div class="image">
+      <img src="/static/loyal.jpg">
+    </div>
+    <label class="text">Посмотреть отчет</label>
+
+    <div class="txtb">
+        <h2>{{fromdate}}</h2>
+        <h2>{{todate}}</h2>
+      <label class="id">От</label>
+      <input class="idinput" type="date" name="from" value="2020-01-01">
+      <label class="seller">До</label>
+      <input class="sellerinput" type="date" name="to" value="2020-01-02">
+
+    </div>
+    <div>
+      <input type="submit" class="logbtn" value="Посчитать"><br>
+      <input type="button" class="logbtnb" value="Назад" onclick="history.back()">
+    </div>
+  </form>
+</body>
+</html>

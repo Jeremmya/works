@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img
+{
+	height: 180px;
+	width: 100%;
+}
+.vid
+{
+	position: absolute;
+	width: 206px;
+	height: 29px;
+	left: 463px;
+	top: 305px;
+
+	
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29px;
+
+	color: #8999AA
+}
+.choose
+{
+	position: absolute;
+	width: 502px;
+	height: 48px;
+	left: 463px;
+	top: 342px;
+
+	border: 2px solid #8999AA;
+	box-sizing border-box;
+	border-radius: 6px;
+
+	font-size: 14px;	
+}
+.logbtn
+{
+	position: absolute;
+	width: 122px;
+	height: 43px;
+	left: 844px;
+	top: 403px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFFFFF;
+
+	background: #00D67A;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 102px;
+	height: 43px;
+	left: 460px;
+	top: 402px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #8999AA;
+
+	background: white;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+	border-radius: 6px;
+}

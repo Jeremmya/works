@@ -1,0 +1,103 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+.box
+{
+	position: relative;
+	text-align: center;
+}
+.text
+{
+	position: absolute;
+	width: 84px;
+	height: 32px;
+	left: 620px;
+	top: 127px;
+
+	font-size: 24px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+img
+{
+	height: 180px;
+	width: 100%;
+}
+.logbtn
+{
+	position: absolute;
+	width: 348px;
+	height: 58px;
+	left: 493px;
+	top: 227px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #FFFFFF;
+
+	background: linear-gradient(270deg, #6E56D0 14.62%, #338BFC 85.49%);
+	border-radius: 6px;
+}
+.logbtnc
+{
+	position: absolute;
+	width: 348px;
+	height: 58px;
+	left: 493px;
+	top: 307px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #FFFFFF;
+
+	background: linear-gradient(270deg, #6E56D0 14.62%, #338BFC 85.49%);
+	border-radius: 6px;
+}
+.logbtnd
+{
+	position: absolute;
+	width: 348px;
+	height: 58px;
+	left: 493px;
+	top: 387px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #FFFFFF;
+
+	background: linear-gradient(270deg, #6E56D0 14.62%, #338BFC 85.49%);
+	border-radius: 6px;
+}
+.logbtnb
+{
+	position: absolute;
+	width: 348px;
+	height: 58px;
+	left: 493px;
+	top: 487px;
+
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
+	color: #FFFFFF;
+
+	background: #bdc3c7;
+	border-radius: 6px;
+}
